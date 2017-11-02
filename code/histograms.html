@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Trade Histogram and Triadic Distribution</title>
+
+<!-- Metadata -->
+<meta charset='utf-8' />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!-- Styles -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="lib/jquery-ui-themes-1.11.4/themes/redmond/jquery-ui.min.css" />
+<link rel="stylesheet"
+	href="https://npmcdn.com/leaflet@1.0.0-rc.1/dist/leaflet.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/flag-icon.css">
+
+<!-- Scripts -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="lib/jquery-ui-1.11.4/jquery-ui.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script> -->
+<!-- 	<script src="http://cdn.leafletjs.com/leaflet/v1.0.0-rc.1/leaflet.js"></script> -->
+<script src="https://npmcdn.com/leaflet@1.0.0-rc.1/dist/leaflet.js"></script>
+<!-- <script src="lib/Leaflet/leaflet-src.js"></script> -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="lib/d3-tip.js"></script>
+<script src="scripts/styles.js"></script>
+<script
+	src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.standalone.js'></script>
+<script src="lib/d3-ForceEdgeBundling.js"></script>
+<script src="bower_components/dmjs/dist/dmjs.js"></script>
+<style>
+.tooltip {
+	background: blue;
+	opacity: 0.9;
+	padding: 10px;
+	border-radius: 6px;
+	color: white;
+	z-index: 2000 !important;
+}
+
+.links line {
+	stroke-opacity: 0.6;
+	fill: transparent !important;
+}
+
+.links path {
+	stroke-opacity: 0.6;
+	fill-rule: nonzero;
+	z-index: 99;
+}
+
+.nodes circle {
+	stroke: #fff;
+	stroke-width: 1.5px;
+}
+
+.country-path {
+	stroke-width: 0px;
+}
+
+.country-path:hover {
+	stroke-width: 1.5px !important;
+	stroke: #aaa;
+}
+
+.country-path.active {
+	stroke-width: 1.5px !important;
+	stroke: #888;
+}
+
+.line {
+	fill: none;
+	stroke: green;
+	stroke-width: 1.5px;
+}
+
+.percentline {
+	fill: none;
+	stroke: red;
+	stroke-width: 1.5px;
+}
+
+.normal-line {
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 1.5px;
+}
+
+.percentline {
+	fill: none;
+	stroke: purple;
+	stroke-width: 1.5px;
+}
+
+.svg-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%; /* aspect ratio */
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.svg-container-ticks {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 5%; /* aspect ratio */
+	vertical-align: top;
+}
+
+.svg-container-ws {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%; /* aspect ratio */
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.svg-container-graph {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%; /* aspect ratio */
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.svg-content-responsive {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0;
+	overflow: visible;
+}
+
+.inactive {
+	stroke-width: 0px !important;
+	opacity: 0.1;
+}
+
+.active {
+	opacity: 1;
+}
+
+.thumbnail.inactive {
+	opacity: 0.3;
+}
+
+circle.focus {
+	stroke: black !important;
+	stroke-width: 5px !important;
+}
+</style>
+
+</head>
+
+<body>
+	<div id="loading">
+		<img src="loading.gif" class="img-responsive center-block" />
+	</div>
+	<div class='container-fluid' id="main"
+		style="display: none; margin: 15px;">
+		<div class="row">
+			<div class="col-sm-2">
+				<div>
+					<select id="yearSelector" class="form-control"
+						onchange="changeYear()">
+					</select>
+				</div>
+				<div id="tradeHistogramDiv"></div>
+				<div class="modal-header">
+					<label class="modal-title"> <input type="checkbox"
+						id="checkboxSimulate"> Simulate Climate Event
+					</label>
+				</div>
+				<div class="modal-body" id="simulationDiv" style="display: none">
+					<h5>Specify reduction in exports from a selected country</h5>
+					<div id="export-reduction-slider"></div>
+					<div id="export-reduction-slider-ticks"></div>
+					<h5>Specify how many times to cascade</h5>
+					<div id="downstream-export-reduction-slider"></div>
+					<div id="downstream-export-reduction-slider-ticks"></div>
+				</div>
+			</div>
+			<div class="col-sm-10">
+				<div class='col-sm-6' id='graph-div'>
+					<div class='col-sm-12'>
+						<div id="network-graph" class="svg-container-graph"></div>
+						<h5>Minimum Trade Link Size (import dependence % / $ value)</h5>
+						<div id="linkSizePercentThresholdDiv">
+							<div id="linkSizePercentThreshold-slider"></div>
+							<div id="linkSizePercentThreshold-slider-ticks"></div>
+						</div>
+						<div id="linkSizeThresholdDiv">
+							<div id="linkSizeThreshold-slider"></div>
+							<div id="linkSizeThreshold-slider-ticks"></div>
+						</div>
+						<div id="linkSizeSecondaryThresholdDiv">
+							<h5>Minimum Percentage of Imports Affected</h5>
+							<div id="linkSizeSecondaryThreshold-slider"></div>
+							<div id="linkSizeSecondaryThreshold-slider-ticks"></div>
+						</div>
+					</div>
+				</div>
+				<div class='col-sm-6'>
+					<div class='col-sm-12' id='map-div'>
+						<div id="map" class="svg-container-ws"></div>
+					</div>
+					<div class='col-sm-12' id='triad-distribution-div'>
+						<div id="triadDistributionChartDiv"></div>
+					</div>
+				</div>
+				<div class='col-sm-12'>
+					<div class='col-sm-3'>
+						<div class='col-sm-8'>
+							<div class="modal-header">
+								<label class="modal-title"> <input type="checkbox"
+									id="checkboxWeightByValue"> Link size by $
+								</label>
+							</div>
+						</div>
+						<div class='col-sm-4'>
+							<div id="linkSelectorGroup" style="height: 100px">
+								<div class="radio">
+									<label><input type="radio" name="optradio"
+										id="allLinks" checked="checked" onClick=linkChange()>All
+										Links</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="optradio" disabled
+										id="exportLinks" onClick=linkChange()>Export Only</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="optradio" disabled
+										id="importLinks" onClick=linkChange()>Import Only</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class='col-sm-9'>
+						<div class="pull-right" id="triadDistributionDisplay"
+							style="height: 120px"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="lib/Leaflet.D3SvgOverlay/L.D3SvgOverlay.js"></script>
+	<script type="text/javascript" src='scripts/shp.js'></script>
+	<script src="bower_components/arc.js/arc.js"></script>
+	<script type="text/javascript" src="scripts/global.js"></script>
+	<script type="text/javascript" src="scripts/mortif-figure.js"></script>
+	<script type='text/javascript' src='scripts/tradehistogram.js'></script>
+</body>
+</html>
