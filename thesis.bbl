@@ -1,0 +1,299 @@
+\begin{thebibliography}{60}
+\newcommand{\enquote}[1]{``#1''}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[Andrienko \emph{et~al.}(2011)]{andrienko2011challenging}
+Andrienko, G., N.~Andrienko, D.~Keim, A.~M. MacEachren and S.~Wrobel,
+  \enquote{Challenging problems of geospatial visual analytics}, Journal of
+  Visual Languages \& Computing \textbf{22}, 4, 251--256 (2011).
+
+\bibitem[Bostok(2016)]{d3}
+Bostok, M. (Data Driven Documents, 2016), {D}3. JavaScript library {d3js.org}.
+  Accessed 28 August 2017.
+
+\bibitem[Bradsher(2011)]{bradsher2011food}
+Bradsher, K., \enquote{Un food agency issues warning on china drought}, The New
+  York Times \textbf{8}, 2, 2011 (2011).
+
+\bibitem[Brobakk and Alm{\aa}s(2011)]{brobakk2011increasing}
+Brobakk, J.~T. and R.~Alm{\aa}s, \enquote{Increasing food and energy prices in
+  2008: What were the causes and who was to blame?},   (2011).
+
+\bibitem[Cook and Thomas(2005)]{cook2005illuminating}
+Cook, K.~A. and J.~J. Thomas, \enquote{Illuminating the path: The research and
+  development agenda for visual analytics},   (2005).
+
+\bibitem[Croppenstedt \emph{et~al.}(2006)]{croppenstedt2006food}
+Croppenstedt, A., M.~Saade and G.~Siam, \enquote{Food security and wheat policy
+  in egypt}, Roles of agriculture policy brief  (2006).
+
+\bibitem[d'Amour \emph{et~al.}(2016)]{d2016teleconnected}
+d'Amour, C.~B., L.~Wenz, M.~Kalkuhl, J.~C. Steckel and F.~Creutzig,
+  \enquote{Teleconnected food supply shocks}, Environmental Research Letters
+  \textbf{11}, 3, 035007 (2016).
+
+\bibitem[D'Odorico \emph{et~al.}(2014)]{d2014feeding}
+D'Odorico, P., J.~A. Carr, F.~Laio, L.~Ridolfi and S.~Vandoni, \enquote{Feeding
+  humanity through global food trade}, Earth's Future \textbf{2}, 9, 458--469
+  (2014).
+
+\bibitem[Dunne and Shneiderman(2013)]{dunne2013motif}
+Dunne, C. and B.~Shneiderman, \enquote{Motif simplification: improving network
+  visualization readability with fan, connector, and clique glyphs}, in
+  \enquote{Proceedings of the SIGCHI Conference on Human Factors in Computing
+  Systems}, pp. 3247--3256 (ACM, 2013).
+
+\bibitem[Eades \emph{et~al.}(1991)]{eades1991preserving}
+Eades, P., W.~Lai, K.~Misue and K.~Sugiyama, \enquote{Preserving the mental map
+  of a diagram}, Tech. rep., Technical Report IIAS-RR-91-16E, Fujitsu
+  Laboratories (1991).
+
+\bibitem[Fader \emph{et~al.}(2013)]{fader2013spatial}
+Fader, M., D.~Gerten, M.~Krause, W.~Lucht and W.~Cramer, \enquote{Spatial
+  decoupling of agricultural production and consumption: quantifying
+  dependences of countries on food imports due to domestic land and water
+  constraints}, Environmental Research Letters \textbf{8}, 1, 014046 (2013).
+
+\bibitem[Fagiolo \emph{et~al.}(2010)]{fagiolo2010evolution}
+Fagiolo, G., J.~Reyes and S.~Schiavo, \enquote{The evolution of the world trade
+  web: a weighted-network analysis}, Journal of Evolutionary Economics
+  \textbf{20}, 4, 479--514 (2010).
+
+\bibitem[FAO(2016)]{faostat}
+FAO (Food and Agriculture Organization of the United Nations, 2016), {F}AOSTAT.
+  Online database {fao.org/faostat}. Accessed 28 August 2017.
+
+\bibitem[Fellmann \emph{et~al.}(2014)]{fellmann2014harvest}
+Fellmann, T., S.~H{\'e}laine and O.~Nekhay, \enquote{Harvest failures,
+  temporary export restrictions and global food security: the example of
+  limited grain exports from {R}ussia, {U}kraine and {K}azakhstan}, Food
+  Security \textbf{6}, 5, 727--742 (2014).
+
+\bibitem[Garlaschelli and Loffredo(2005)]{garlaschelli2005structure}
+Garlaschelli, D. and M.~I. Loffredo, \enquote{Structure and evolution of the
+  world trade network}, Physica A: Statistical Mechanics and its Applications
+  \textbf{355}, 1, 138--144 (2005).
+
+\bibitem[Gephart \emph{et~al.}(2016)]{gephart2016vulnerability}
+Gephart, J.~A., E.~Rovenskaya, U.~Dieckmann, M.~L. Pace and
+  {\AA}.~Br{\"a}nnstr{\"o}m, \enquote{Vulnerability to shocks in the global
+  seafood trade network}, Environmental Research Letters \textbf{11}, 3, 035008
+  (2016).
+
+\bibitem[Ghoniem \emph{et~al.}(2004)]{ghoniem2004comparison}
+Ghoniem, M., J.-D. Fekete and P.~Castagliola, \enquote{A comparison of the
+  readability of graphs using node-link and matrix-based representations}, in
+  \enquote{Information Visualization, 2004. INFOVIS 2004. IEEE Symposium on},
+  pp. 17--24 (Ieee, 2004).
+
+\bibitem[Godfray \emph{et~al.}(2010)]{godfray2010food}
+Godfray, H. C.~J., J.~R. Beddington, I.~R. Crute, L.~Haddad, D.~Lawrence, J.~F.
+  Muir, J.~Pretty, S.~Robinson, S.~M. Thomas and C.~Toulmin, \enquote{Food
+  security: the challenge of feeding 9 billion people}, science \textbf{327},
+  5967, 812--818 (2010).
+
+\bibitem[Grochow and Kellis(2007)]{grochow2007network}
+Grochow, J.~A. and M.~Kellis, \enquote{Network motif discovery using subgraph
+  enumeration and symmetry-breaking}, in \enquote{RECOMB}, vol. 4453, pp.
+  92--106 (Springer, 2007).
+
+\bibitem[{Hadley Center}(2017)]{metofficeCitation}
+{Hadley Center} ({Met Office}, 2017), website
+  {www.metoffice.gov.uk/food-insecurity-index}. Accessed 28 August 2017.
+
+\bibitem[Headey(2011)]{headey2011rethinking}
+Headey, D., \enquote{Rethinking the global food crisis: The role of trade
+  shocks}, Food Policy \textbf{36}, 2, 136--146 (2011).
+
+\bibitem[Herman \emph{et~al.}(2000)]{herman2000graph}
+Herman, I., G.~Melan{\c{c}}on and M.~S. Marshall, \enquote{Graph visualization
+  and navigation in information visualization: A survey}, IEEE Transactions on
+  visualization and computer graphics \textbf{6}, 1, 24--43 (2000).
+
+\bibitem[Hoekstra and Hung(2005)]{hoekstra2005globalisation}
+Hoekstra, A.~Y. and P.~Q. Hung, \enquote{Globalisation of water resources:
+  international virtual water flows in relation to crop trade}, Global
+  environmental change \textbf{15}, 1, 45--56 (2005).
+
+\bibitem[Hoekstra and Mekonnen(2012)]{hoekstra2012water}
+Hoekstra, A.~Y. and M.~M. Mekonnen, \enquote{The water footprint of humanity},
+  Proceedings of the national academy of sciences \textbf{109}, 9, 3232--3237
+  (2012).
+
+\bibitem[Holten and Van~Wijk(2009)]{holten2009force}
+Holten, D. and J.~J. Van~Wijk, \enquote{Force-directed edge bundling for graph
+  visualization}, in \enquote{Computer graphics forum}, vol.~28, pp. 983--990
+  (Wiley Online Library, 2009).
+
+\bibitem[Hund \emph{et~al.}(2016)]{hund2016visual}
+Hund, M., D.~B{\"o}hm, W.~Sturm, M.~Sedlmair, T.~Schreck, T.~Ullrich, D.~A.
+  Keim, L.~Majnaric and A.~Holzinger, \enquote{Visual analytics for concept
+  exploration in subspaces of patient groups}, Brain informatics \textbf{3}, 4,
+  233--247 (2016).
+
+\bibitem[Johnstone and Mazo(2011)]{johnstone2011global}
+Johnstone, S. and J.~Mazo, \enquote{Global warming and the arab spring},
+  Survival \textbf{53}, 2, 11--17 (2011).
+
+\bibitem[Kali and Reyes(2007)]{kali2007architecture}
+Kali, R. and J.~Reyes, \enquote{The architecture of globalization: a network
+  approach to international economic integration}, Journal of International
+  Business Studies \textbf{38}, 4, 595--620 (2007).
+
+\bibitem[Keim \emph{et~al.}(2008)]{keim2008visual}
+Keim, D., G.~Andrienko, J.-D. Fekete, C.~Gorg, J.~Kohlhammer and
+  G.~Melan{\c{c}}on, \enquote{Visual analytics: Definition, process, and
+  challenges}, Lecture notes in computer science \textbf{4950}, 154--176
+  (2008).
+
+\bibitem[Keim \emph{et~al.}(2011)]{kohlhammer2011solving}
+Keim, D., J.~Kohlhammer, M.~Pohl, G.~Santucci and G.~Andrienko,
+  \enquote{Solving problems with visual analytics}, Procedia Computer Science
+  \textbf{7}, 117--120 (2011).
+
+\bibitem[Keim \emph{et~al.}(2006)]{keim2006challenges}
+Keim, D.~A., F.~Mansmann, J.~Schneidewind and H.~Ziegler, \enquote{Challenges
+  in visual data analysis}, in \enquote{Information Visualization, 2006. IV
+  2006. Tenth International Conference on}, pp. 9--16 (IEEE, 2006).
+
+\bibitem[Konar \emph{et~al.}(2011)]{konar2011water}
+Konar, M., C.~Dalin, S.~Suweis, N.~Hanasaki, A.~Rinaldo and
+  I.~Rodriguez-Iturbe, \enquote{Water for food: The global virtual water trade
+  network}, Water Resources Research \textbf{47}, 5 (2011).
+
+\bibitem[Li \emph{et~al.}(2005)]{li2005towards}
+Li, L., D.~Alderson, J.~C. Doyle and W.~Willinger, \enquote{Towards a theory of
+  scale-free graphs: Definition, properties, and implications}, Internet
+  Mathematics \textbf{2}, 4, 431--523 (2005).
+
+\bibitem[MacDonald \emph{et~al.}(2015)]{macdonald2015rethinking}
+MacDonald, G.~K., K.~A. Brauman, S.~Sun, K.~M. Carlson, E.~S. Cassidy, J.~S.
+  Gerber and P.~C. West, \enquote{Rethinking agricultural trade relationships
+  in an era of globalization}, BioScience \textbf{65}, 3, 275--289 (2015).
+
+\bibitem[Milo \emph{et~al.}(2002)]{milo2002network}
+Milo, R., S.~Shen-Orr, S.~Itzkovitz, N.~Kashtan, D.~Chklovskii and U.~Alon,
+  \enquote{Network motifs: simple building blocks of complex networks}, Science
+  \textbf{298}, 5594, 824--827 (2002).
+
+\bibitem[Porkka \emph{et~al.}(2013)]{porkka2013food}
+Porkka, M., M.~Kummu, S.~Siebert and O.~Varis, \enquote{From food insufficiency
+  towards trade dependency: a historical analysis of global food availability},
+  PloS one \textbf{8}, 12, e82714 (2013).
+
+\bibitem[Purchase(1997)]{purchase1997aesthetic}
+Purchase, H., \enquote{Which aesthetic has the greatest effect on human
+  understanding?}, in \enquote{International Symposium on Graph Drawing}, pp.
+  248--261 (Springer, 1997).
+
+\bibitem[Ravasz and Barab{\'a}si(2003)]{ravasz2003hierarchical}
+Ravasz, E. and A.-L. Barab{\'a}si, \enquote{Hierarchical organization in
+  complex networks}, Physical Review E \textbf{67}, 2, 026112 (2003).
+
+\bibitem[Rodgers(2005)]{rodgers2005graph}
+Rodgers, P., \enquote{Graph drawing techniques for geographic visualization},
+  Exploring geovisualization pp. 143--158 (2005).
+
+\bibitem[Sacha \emph{et~al.}(2014)]{sacha2014knowledge}
+Sacha, D., A.~Stoffel, F.~Stoffel, B.~C. Kwon, G.~Ellis and D.~A. Keim,
+  \enquote{Knowledge generation model for visual analytics}, IEEE transactions
+  on visualization and computer graphics \textbf{20}, 12, 1604--1613 (2014).
+
+\bibitem[Schiavo \emph{et~al.}(2010)]{schiavo2010international}
+Schiavo, S., J.~Reyes and G.~Fagiolo, \enquote{International trade and
+  financial integration: a weighted network analysis}, Quantitative Finance
+  \textbf{10}, 4, 389--399 (2010).
+
+\bibitem[Schmidhuber and Tubiello(2007)]{schmidhuber2007global}
+Schmidhuber, J. and F.~N. Tubiello, \enquote{Global food security under climate
+  change}, Proceedings of the National Academy of Sciences \textbf{104}, 50,
+  19703--19708 (2007).
+
+\bibitem[Schnepf and Chite(2005)]{schnepf2005us}
+Schnepf, R.~D. and R.~M. Chite, \enquote{Us agriculture after hurricane
+  katrina: status and issues},  (Congressional Information Service, Library of
+  Congress, 2005).
+
+\bibitem[Serrano and Bogun{\'a}(2003)]{serrano2003topology}
+Serrano, M.~A. and M.~Bogun{\'a}, \enquote{Topology of the world trade web},
+  Physical Review E \textbf{68}, 1, 015101 (2003).
+
+\bibitem[Shen-Orr \emph{et~al.}(2002)]{shen2002network}
+Shen-Orr, S.~S., R.~Milo, S.~Mangan and U.~Alon, \enquote{Network motifs in the
+  transcriptional regulation network of escherichia coli}, Nature genetics
+  \textbf{31}, 1, 64--68 (2002).
+
+\bibitem[Shneiderman(1996)]{shneiderman1996eyes}
+Shneiderman, B., \enquote{The eyes have it: A task by data type taxonomy for
+  information visualizations}, in \enquote{Visual Languages, 1996.
+  Proceedings., IEEE Symposium on}, pp. 336--343 (IEEE, 1996).
+
+\bibitem[Shneiderman and Aris(2006)]{shneiderman2006network}
+Shneiderman, B. and A.~Aris, \enquote{Network visualization by semantic
+  substrates}, IEEE Transactions on Visualization and Computer Graphics
+  \textbf{12}, 5, 733--740 (2006).
+
+\bibitem[Shutters and Muneepeerakul(2012)]{shutters2012agricultural}
+Shutters, S.~T. and R.~Muneepeerakul, \enquote{Agricultural trade networks and
+  patterns of economic development}, PloS one \textbf{7}, 7, e39756 (2012).
+
+\bibitem[Silberglitt(2015)]{silberglitt2015critical}
+Silberglitt, R., \emph{Critical Materials, US Import Dependence, and
+  Recommended Actions} (RAND Corporation, 2015).
+
+\bibitem[Squartini and Garlaschelli(2012)]{squartini2012triadic}
+Squartini, T. and D.~Garlaschelli, \enquote{Triadic motifs and dyadic
+  self-organization in the world trade network}, in \enquote{International
+  Workshop on Self-Organizing Systems}, pp. 24--35 (Springer, 2012).
+
+\bibitem[Sternberg(2012)]{sternberg2012chinese}
+Sternberg, T., \enquote{Chinese drought, bread and the {A}rab {S}pring},
+  Applied Geography \textbf{34}, 519--524 (2012).
+
+\bibitem[Stocker \emph{et~al.}(2013)]{stocker2013climate}
+Stocker, T.~F., D.~Qin, G.-K. Plattner, M.~Tignor, S.~K. Allen, J.~Boschung,
+  A.~Nauels, Y.~Xia, V.~Bex and P.~M. Midgley, \enquote{Climate change 2013:
+  The physical science basis. contribution of working group i to the fifth
+  assessment report of the intergovernmental panel on climate change, 1535 pp},
+   (2013).
+
+\bibitem[Stouffer \emph{et~al.}(2012)]{stouffer2012evolutionary}
+Stouffer, D.~B., M.~Sales-Pardo, M.~I. Sirer and J.~Bascompte,
+  \enquote{Evolutionary conservation of species' roles in food webs}, Science
+  \textbf{335}, 6075, 1489--1492 (2012).
+
+\bibitem[Sun \emph{et~al.}(2013)]{sun2013survey}
+Sun, G.-D., Y.-C. Wu, R.-H. Liang and S.-X. Liu, \enquote{A survey of visual
+  analytics techniques and applications: State-of-the-art research and future
+  challenges}, Journal of Computer Science and Technology \textbf{28}, 5,
+  852--867 (2013).
+
+\bibitem[Timmer(2010)]{timmer2010reflections}
+Timmer, C.~P., \enquote{Reflections on food crises past}, Food policy
+  \textbf{35}, 1, 1--11 (2010).
+
+\bibitem[Trenberth(2005)]{trenberth2005uncertainty}
+Trenberth, K., \enquote{Uncertainty in hurricanes and global warming}, Science
+  \textbf{308}, 5729, 1753--1754 (2005).
+
+\bibitem[UNDESA(2011)]{globalFoodCrises}
+UNDESA, \enquote{The global food crises}, The Report on the World Social
+  Situation 2011: The Global Social Crisis  (2011).
+
+\bibitem[Webster \emph{et~al.}(2005)]{webster2005changes}
+Webster, P.~J., G.~J. Holland, J.~A. Curry and H.-R. Chang, \enquote{Changes in
+  tropical cyclone number, duration, and intensity in a warming environment},
+  Science \textbf{309}, 5742, 1844--1846 (2005).
+
+\bibitem[Winkler and Reichardt(2013)]{winkler2013motifs}
+Winkler, M. and J.~Reichardt, \enquote{Motifs in triadic random graphs based on
+  steiner triple systems}, Physical Review E \textbf{88}, 2, 022805 (2013).
+
+\bibitem[Zhou \emph{et~al.}(2016)]{zhou2016structure}
+Zhou, M., G.~Wu and H.~Xu, \enquote{Structure and formation of top networks in
+  international trade, 2001--2010}, Social Networks \textbf{44}, 9--21 (2016).
+
+\end{thebibliography}

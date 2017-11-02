@@ -1,0 +1,28 @@
+\nobreakspace {}\hfill Page\par 
+\contentsline {part}{LIST OF TABLES}{v}{Doc-Start}
+\contentsline {part}{LIST OF FIGURES}{vi}{Doc-Start}
+CHAPTER \par 
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}RELATED WORK}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Existing Visualizations}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Trade Networks and Food Security}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}Network Graphs}{10}{section.2.3}
+\contentsline {section}{\numberline {2.4}Visual Analytics}{13}{section.2.4}
+\contentsline {chapter}{\numberline {3}SYSTEM}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Data, Assumptions, and Formulas}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}System Architecture}{20}{section.3.2}
+\contentsline {section}{\numberline {3.3}Visual Analytics Framework}{21}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Simulation Option (Figure \ref {dashboardSections}-5)}{24}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Histograms (Figures \ref {dashboardSections}-1, \ref {histogram})}{24}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Network graph (Figure \ref {networkGraph})}{26}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Choropleth Map (Section 3, Figure \ref {map})}{30}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Triad Significance Profiles (Section 4, Figures \ref {dashboardSections}-4, \ref {tsps})}{32}{subsection.3.3.5}
+\contentsline {section}{\numberline {3.4}Enhancement Over Existing Visualizations}{34}{section.3.4}
+\contentsline {chapter}{\numberline {4}CASE STUDIES}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}2011 Chinese Drought}{35}{section.4.1}
+\contentsline {section}{\numberline {4.2}Simulated 2020 US Climate Event}{40}{section.4.2}
+\contentsline {chapter}{\numberline {5}CONCLUSIONS}{48}{chapter.5}
+\contentsline {section}{\numberline {5.1}Summary}{48}{section.5.1}
+\contentsline {section}{\numberline {5.2}Limitations}{48}{section.5.2}
+\contentsline {section}{\numberline {5.3}Future Work}{49}{section.5.3}
+\contentsline {part}{REFERENCES}{52}{section.5.3}

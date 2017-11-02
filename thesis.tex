@@ -1,0 +1,84 @@
+\documentclass[12pt,letterpaper]{report}
+\usepackage{natbib}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{afterpage}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsbsy}
+\usepackage{dcolumn,array}
+\usepackage{tocloft}
+\usepackage{asudis}
+\usepackage[pageanchor=true,plainpages=false,pdfpagelabels,bookmarks,bookmarksnumbered,colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}
+\begin{document}
+%-----------------------front matter
+\pagenumbering{roman}
+\title{A Visual Analytics Process for Exploring Risk and Vulnerability in International Food Trade Networks}
+\author{Travis Seville}
+\degreeName{Master of Science}
+\paperType{Thesis}
+\defensemonth{November}
+\defenseyear{2017}
+\gradmonth{December}
+\gradyear{2017}
+\chair{Ross Maciejewski}
+\memberOne{I-Han Hsiao}
+\memberTwo{Shade Shutters}
+\maketitle
+\doublespace
+\include{abstract}
+%\dedicationpage{}
+\include{ack}
+\tableofcontents
+% This puts the word "Page" right justified above everything else.
+\addtocontents{toc}{~\hfill Page\par}
+% Asking LaTeX for a new page here guarantees that the LOF is on a separate page
+% after the TOC ends.
+\newpage
+% Making the LOT and LOF "parts" rather than chapters gets them indented at
+% level -1 according to the chart: top of page 4 of the document at
+% ftp://tug.ctan.org/pub/tex-archive/macros/latex/contrib/tocloft/tocloft.pdf
+\addcontentsline{toc}{part}{LIST OF TABLES}
+\renewcommand{\cftlabel}{Table}
+\listoftables
+% This gets the headers for the LOT right on the first page.  Subsequent pages
+% are handled by the fancyhdr code in the asudis.sty file.
+\addtocontents{lot}{Table~\hfill Page \par}
+\newpage
+\addcontentsline{toc}{part}{LIST OF FIGURES}
+\addtocontents{toc}{CHAPTER \par}
+\renewcommand{\cftlabel}{Figure}
+% This gets the headers for the LOF right on the first page.  Subsequent pages
+% are handled by the fancyhdr code in the asudis.sty file.
+\addtocontents{lof}{Figure~\hfill Page \par}
+\listoffigures
+%-----------------------body
+\doublespace
+\pagenumbering{arabic}
+%\include{notes}
+\include{introduction}
+\include{relatedWork}
+%\include{internationalFoodTradeNetwork}
+%\include{networkAnalysis}
+%\include{effectiveVisualizations}
+%\include{data}
+\include{system}
+%\include{comparison}
+\include{caseStudy}
+\include{conclusionRecommendations}
+%\include{scratch}
+%-----------------------back matter
+{\singlespace
+% Making the references a "part" rather than a chapter gets it indented at
+% level -1 according to the chart: top of page 4 of the document at
+% ftp://tug.ctan.org/pub/tex-archive/macros/latex/contrib/tocloft/tocloft.pdf
+\addcontentsline{toc}{part}{REFERENCES}
+%\nocite{*}
+\bibliographystyle{asudis}
+\bibliography{thesis}
+}
+%\renewcommand{\chaptername}{APPENDIX}
+%\addtocontents{toc}{APPENDIX \par}
+%\appendix
+%\include{appendix1}
+%\include{vita}
+\end{document}
